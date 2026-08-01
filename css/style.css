@@ -312,7 +312,7 @@ section {
 .hero h1 {
   max-width: 980px;
   margin-bottom: 26px;
-  font-size: clamp(3rem, 7vw, 6.4rem);
+  font-size: clamp(3rem, 6.2vw, 5.8rem);
   font-weight: 850;
 }
 
@@ -527,6 +527,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
+  align-items: start;
 }
 
 .demo-card {
@@ -565,20 +566,37 @@ section {
 
 .demo-thumbnail {
   position: relative;
-  display: block;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  padding: 32px 24px 72px;
   border-top: 1px solid var(--color-border);
   background: #eef1f7;
 }
 
+.demo-card-wide .demo-thumbnail {
+  min-height: 500px;
+}
+
 .demo-thumbnail img {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: top center;
+  max-width: 540px;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center top;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(18, 32, 63, 0.12);
   transition:
     transform 280ms ease,
     filter 280ms ease;
+}
+
+.demo-card-wide .demo-thumbnail img {
+  max-width: 900px;
+  max-height: 460px;
 }
 
 .demo-thumbnail::after {
@@ -587,15 +605,16 @@ section {
   inset: 0;
   background: rgba(13, 27, 62, 0);
   transition: background 220ms ease;
+  pointer-events: none;
 }
 
 .demo-thumbnail:hover img {
   transform: scale(1.015);
-  filter: brightness(0.88);
+  filter: brightness(0.92);
 }
 
 .demo-thumbnail:hover::after {
-  background: rgba(13, 27, 62, 0.12);
+  background: rgba(13, 27, 62, 0.06);
 }
 
 .play-button {
