@@ -1,18 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowless Site</title>
-</head>
-<body>
-    <header>
-        <h1>Flowless</h1>
-        <p>You don't have to remember where files live.</p>
-    </header>
+  <meta charset="UTF-8">
 
-    <footer>
-        <p>&copy; 2026 Flowless. All rights reserved.</p>
-    </footer>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Flowless is a simpler way to manage project files in Google Drive. Upload, organize, notify, and find files without remembering folder locations."
+  >
+
+  <title>Flowless | A simpler way to manage project files</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="site-logo" href="#top" aria-label="Flowless home">
+        Flowless
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a class="nav-cta" href="#request-demo">Request a demo</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <p class="eyebrow">
+          Project file management for Google Drive
+        </p>
+
+        <h1>
+          You don’t have to remember<br>
+          where files live.
+          <span>Flowless knows.</span>
+        </h1>
+
+        <p class="hero-description">
+          A simpler way to manage project files in Google Drive.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#request-demo">
+            Request a demo
+          </a>
+
+          <a class="button button-secondary" href="#demo">
+            Watch how it works
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Problem -->
+    <section class="problem-section">
+      <div class="container narrow-container">
+
+        <p class="section-label">
+          Simple file workflows break all the time.
+        </p>
+
+        <div class="simple-workflow" aria-label="Basic file workflow">
+          <span>Upload the file.</span>
+          <span>Share it with the right people.</span>
+          <span>Find it later.</span>
+        </div>
+
+        <p class="problem-intro">
+          It should be simple.
+        </p>
+
+        <div class="problem-content">
+
+          <p>But in real teams:</p>
+
+          <div class="problem-quotes">
+            <blockquote>“Where is the file?”</blockquote>
+            <blockquote>“I’ll send it later.”</blockquote>
+            <blockquote>“Which version is the latest?”</blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Flow -->
+    <section class="workflow-section">
+      <div class="container">
+
+        <h2>
+          Flowless keeps the workflow moving.
+        </h2>
+
+        <div class="workflow">
+
+          <div class="workflow-step">
+            <span class="workflow-number">01</span>
+            <strong>Upload</strong>
+          </div>
+
+          <span class="workflow-arrow" aria-hidden="true">→</span>
+
+          <div class="workflow-step">
+            <span class="workflow-number">02</span>
+            <strong>Stored</strong>
+          </div>
+
+          <span class="workflow-arrow" aria-hidden="true">→</span>
+
+          <div class="workflow-step">
+            <span class="workflow-number">03</span>
+            <strong>Shared</strong>
+          </div>
+
+          <span class="workflow-arrow" aria-hidden="true">→</span>
+
+          <div class="workflow-step">
+            <span class="workflow-number">04</span>
+            <strong>Done</strong>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- How it works -->
+    <section
+      id="how-it-works"
+      class="how-it-works-section"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">How Flowless Works</p>
+
+          <h2>
+            A simple flow for project files.
+          </h2>
+
+          <p>
+            A simple flow for uploads, reviews, notifications,
+            and finding files later.
+          </p>
+        </div>
+
+        <ol class="steps-list">
+
+          <li class="step-card">
+            <span class="step-number">1</span>
+
+            <div>
+              <h3>Select or create a project</h3>
+              <p>
+                Search for an existing project or create a new one
+                without navigating through Drive folders.
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">2</span>
+
+            <div>
+              <h3>Upload the file</h3>
+              <p>
+                Upload the file directly to the selected project.
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">3</span>
+
+            <div>
+              <h3>New projects are reviewed</h3>
+              <p>
+                New project folders are reviewed before becoming active.
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">4</span>
+
+            <div>
+              <h3>The right people are notified</h3>
+              <p>
+                Team members receive notifications when files
+                or projects are ready.
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">5</span>
+
+            <div>
+              <h3>Files stay easy to find</h3>
+              <p>
+                Project files remain accessible through the Flowless finder.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+    <!-- Product demos -->
+    <section id="demo" class="demo-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">See Flowless in action</p>
+
+          <h2>
+            Three simple workflows.
+          </h2>
+
+          <p>
+            Select a demo to see how Flowless handles uploads,
+            file discovery, and new project review.
+          </p>
+        </div>
+
+
+        <div class="demo-grid">
+
+          <!-- Upload demo -->
+          <article class="demo-card">
+
+            <div class="demo-card-copy">
+              <h3>Upload to the right project</h3>
+
+              <p>
+                No one has to remember where the file belongs.
+              </p>
+            </div>
+
+            <a
+              class="demo-thumbnail"
+              href="VIDEO_URL_UPLOAD"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch the Flowless upload demo"
+            >
+              <img
+                src="images/Flowless_upload.png"
+                alt="Flowless project upload screen"
+                loading="lazy"
+              >
+
+              <span class="play-button" aria-hidden="true">
+                <span>▶</span>
+              </span>
+
+              <span class="watch-label">
+                Watch demo
+              </span>
+            </a>
+
+          </article>
+
+
+          <!-- Finder demo -->
+          <article class="demo-card">
+
+            <div class="demo-card-copy">
+              <h3>Find files later</h3>
+
+              <p>
+                Project files stay easy to find,
+                even after the upload.
+              </p>
+            </div>
+
+            <a
+              class="demo-thumbnail"
+              href="VIDEO_URL_FINDER"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch the Flowless file finder demo"
+            >
+              <img
+                src="images/Flowless_finder.png"
+                alt="Flowless project file finder screen"
+                loading="lazy"
+              >
+
+              <span class="play-button" aria-hidden="true">
+                <span>▶</span>
+              </span>
+
+              <span class="watch-label">
+                Watch demo
+              </span>
+            </a>
+
+          </article>
+
+
+          <!-- Admin approval demo -->
+          <article class="demo-card demo-card-wide">
+
+            <div class="demo-card-copy">
+              <h3>Review new projects before they become active</h3>
+
+              <p>
+                Keep project folders clean and consistent.
+              </p>
+            </div>
+
+            <a
+              class="demo-thumbnail"
+              href="VIDEO_URL_ADMIN"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch the Flowless project approval demo"
+            >
+              <img
+                src="images/Flowless_admin_aprove.png"
+                alt="Flowless admin project approval screen"
+                loading="lazy"
+              >
+
+              <span class="play-button" aria-hidden="true">
+                <span>▶</span>
+              </span>
+
+              <span class="watch-label">
+                Watch demo
+              </span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Features</p>
+
+          <h2>
+            The essentials for keeping project files moving.
+          </h2>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+
+            <h3>Project-based uploads</h3>
+
+            <p>
+              Upload files to the right project without remembering
+              folder locations.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+
+            <h3>New project approval</h3>
+
+            <p>
+              Keep project folders clean before new projects
+              become active.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+
+            <h3>Email notifications</h3>
+
+            <p>
+              Notify the right people when files or projects are ready.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">04</span>
+
+            <h3>File finder</h3>
+
+            <p>
+              Find project files later without searching through Drive.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section id="request-demo" class="cta-section">
+      <div class="container cta-inner">
+
+        <p>
+          Stop asking where files are.
+        </p>
+
+        <h2>
+          See how Flowless works with your team.
+        </h2>
+
+        <a
+          class="button button-light"
+          href="mailto:YOUR_EMAIL_ADDRESS?subject=Flowless%20Demo%20Request"
+        >
+          Request a demo
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div>
+        <a class="footer-logo" href="#top">
+          Flowless
+        </a>
+
+        <p>
+          A simpler way to manage project files in Google Drive.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a href="#request-demo">Contact</a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="current-year"></span> Flowless.
+        All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('current-year').textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
