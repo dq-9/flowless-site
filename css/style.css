@@ -230,10 +230,9 @@ section {
 
 .site-logo,
 .footer-logo {
-  color: var(--color-text);
   font-size: 1.45rem;
-  font-weight: 850;
-  letter-spacing: -0.04em;
+  font-weight: 650;
+  letter-spacing: -0.03em;
 }
 
 .site-logo::after,
@@ -647,21 +646,6 @@ section {
   background: var(--color-primary-dark);
 }
 
-.watch-label {
-  position: absolute;
-  z-index: 2;
-  right: 18px;
-  bottom: 18px;
-  padding: 8px 13px;
-  border-radius: 999px;
-  background: rgba(13, 27, 62, 0.88);
-  color: var(--color-white);
-  font-size: 0.8rem;
-  font-weight: 750;
-  backdrop-filter: blur(8px);
-}
-
-
 /* =========================================================
    Features
    ========================================================= */
@@ -955,13 +939,6 @@ section {
   .play-button span {
     font-size: 1.1rem;
   }
-
-  .watch-label {
-    right: 12px;
-    bottom: 12px;
-    padding: 7px 11px;
-  }
-
   .feature-card {
     min-height: auto;
     padding: 26px;
