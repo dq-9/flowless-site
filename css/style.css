@@ -424,16 +424,15 @@ section {
     minmax(130px, 1fr)
     auto
     minmax(130px, 1fr);
-  align-items: center;
+  align-items: stretch;
   gap: 22px;
 }
 
 .workflow-step {
   display: flex;
-  align-items: flex-start;
-  min-height: 160px;
+  min-height: 170px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-medium);
@@ -441,7 +440,14 @@ section {
 }
 
 .workflow-step strong {
+  display: block;
+  margin: 8px 0 10px;
   font-size: 1.35rem;
+}
+
+.workflow-step p {
+  margin: 0;
+  line-height: 1.45;
 }
 
 .workflow-number {
