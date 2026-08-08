@@ -911,6 +911,42 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  .problem-section,
+  .workflow-section,
+  .how-it-works-section,
+  .demo-section,
+  .features-section,
+  .cta-section {
+    padding: 56px 0;
+  }
+
+  .simple-workflow {
+    gap: 12px;
+    margin: 22px 0 30px;
+  }
+
+  .simple-workflow span {
+    min-height: 64px;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .step-card {
+    gap: 16px;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .step-number {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+
 
 /* =========================================================
    Responsive: mobile
