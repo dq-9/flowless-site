@@ -870,6 +870,46 @@ section {
     grid-column: auto;
   }
 }
+@media (max-width: 600px) {
+  .demo-thumbnail,
+  .demo-card-wide .demo-thumbnail {
+    min-height: 0;
+    padding: 28px 20px;
+  }
+
+  .demo-thumbnail img,
+  .demo-card-wide .demo-thumbnail img {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-card {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .feature-number {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .site-logo {
+    font-size: 1.15rem;
+  }
+
+  .site-nav .nav-cta {
+    padding: 8px 13px;
+    font-size: 0.8rem;
+  }
+}
 
 
 /* =========================================================
