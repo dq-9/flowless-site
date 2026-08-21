@@ -781,8 +781,7 @@ section {
 
 .footer-links {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: flex-start;
   justify-content: flex-end;
   gap: 16px 24px;
