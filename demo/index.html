@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Try the Flowless Web App demo or explore a sample Flowless spreadsheet.">
+
+  <title>Flowless | Live Demo</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png">
+
+  <style>
+    .demo-landing {
+      min-height: calc(100vh - var(--header-height));
+      padding: 96px 0 110px;
+      background:
+        radial-gradient(circle at 82% 12%, rgba(36, 72, 255, 0.12), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+    }
+
+    .demo-landing-header {
+      max-width: 760px;
+      margin-bottom: 46px;
+    }
+
+    .demo-landing-header h1 {
+      margin-bottom: 18px;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 850;
+    }
+
+    .demo-landing-header h1 span {
+      color: var(--color-primary);
+    }
+
+    .demo-landing-header > p:last-child {
+      max-width: 680px;
+      margin-bottom: 0;
+      color: var(--color-text-soft);
+      font-size: 1.12rem;
+    }
+
+    .demo-choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .demo-choice-card {
+      display: flex;
+      min-height: 360px;
+      flex-direction: column;
+      padding: 34px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-large);
+      background: var(--color-white);
+      box-shadow: var(--shadow-card);
+    }
+
+    .demo-choice-number {
+      display: inline-block;
+      margin-bottom: 46px;
+      color: var(--color-primary);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.13em;
+    }
+
+    .demo-choice-card h2 {
+      margin-bottom: 14px;
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
+    }
+
+    .demo-choice-card > p {
+      margin-bottom: 18px;
+      color: var(--color-text-soft);
+    }
+
+    .demo-note {
+      margin: 0 0 28px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--color-bg-soft);
+      color: var(--color-text-soft);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .demo-choice-card .button {
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .demo-page-note {
+      max-width: 760px;
+      margin-top: 34px;
+      color: var(--color-text-soft);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .demo-landing {
+        padding: 70px 0 80px;
+      }
+
+      .demo-choice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .demo-choice-card {
+        min-height: 0;
+        padding: 28px;
+      }
+
+      .demo-choice-number {
+        margin-bottom: 28px;
+      }
+
+      .demo-choice-card .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="../" aria-label="Flowless home">Flowless </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../#how-it-works">How it works</a>
+        <a href="./" aria-current="page">Live Demo</a>
+        <a href="../#features">Features</a>
+        <a href="../help/">Help</a>
+        <a
+          class="nav-cta"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSenA9XQhorL8AsXYXGXHHgdKC8vaj6UW8YOBI3whgvIZ4mY9Q/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Request a demo
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="demo-landing">
+    <div class="container">
+
+      <div class="demo-landing-header">
+        <p class="section-label">Live Demo</p>
+        <h1>See how <span>Flowless</span> works.</h1>
+        <p>
+          Try the Web App interface or explore a sample spreadsheet
+          to see how Flowless keeps project files organized and easy to find.
+        </p>
+      </div>
+
+      <div class="demo-choice-grid">
+
+        <article class="demo-choice-card">
+          <span class="demo-choice-number">01</span>
+          <h2>Try the Web App</h2>
+          <p>
+            Explore project search, Finder, and the Flowless upload workflow.
+          </p>
+
+          <p class="demo-note">
+            Public demo: file uploads and Google Drive links are disabled
+            for security reasons.
+          </p>
+
+          <!-- Replace WEB_APP_DEMO_URL with the deployed demo Web App URL -->
+          <a
+            class="button button-primary"
+            href="https://script.google.com/macros/s/AKfycbzTKgqDraULJ98Lq57qoqcjcoL8xNVsaf3TSQvlT8GFdJpe9txQC8FnMoOkieacuzKp/exec"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Web App Demo
+          </a>
+        </article>
+
+        <article class="demo-choice-card">
+          <span class="demo-choice-number">02</span>
+          <h2>View the Demo Spreadsheet</h2>
+          <p>
+            See a sample Flowless workbook with project, user, and activity data.
+          </p>
+
+          <p class="demo-note">
+            The spreadsheet is read-only and contains sample data only.
+          </p>
+
+          <!-- Replace DEMO_SPREADSHEET_URL with the public view-only spreadsheet URL -->
+          <a
+            class="button button-primary"
+            href="https://docs.google.com/spreadsheets/d/1xYvMWhxCS-VaJPKMRSkPcHNbOKH8fQ2IciCu-JuHl4c"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Demo Spreadsheet
+          </a>
+        </article>
+
+      </div>
+
+      <p class="demo-page-note">
+        Want to see the complete setup and admin workflow?
+        Visit Help for the User's Guide and Admin Guide.
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div>
+        <a class="footer-logo" href="../">Flowless </a>
+        <p>A simpler way to manage project files in Google Drive.</p>
+      </div>
+
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="../#how-it-works">How it works</a>
+        <a href="./">Live Demo</a>
+        <a href="../#features">Features</a>
+        <a href="../help/">Help</a>
+        <a
+          class="nav-cta"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSenA9XQhorL8AsXYXGXHHgdKC8vaj6UW8YOBI3whgvIZ4mY9Q/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Request a demo
+        </a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="current-year"></span> Flowless. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
