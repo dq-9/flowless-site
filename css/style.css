@@ -896,6 +896,7 @@ section {
     max-width: 100%;
     max-height: none;
   }
+  
 }
 
 @media (max-width: 600px) {
