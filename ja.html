@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="description"
+    content="Flowlessは、案件ごとのアップロード、共有通知、ファイル検索をひとつにまとめ、保存先不明・共有漏れ・最新版不明を減らすGoogleドライブのファイル管理ツールです。"
+  >
+  <meta property="og:title"
+      content="Flowless | Googleドライブのファイル管理・案件別アップロード">
+
+<meta property="og:description"
+      content="Googleドライブの案件ファイルを、ひとつの入口からアップロード・共有・検索。">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url"
+      content="https://dq-9.github.io/flowless-site/ja.html">
+
+<meta property="og:image"
+      content="https://dq-9.github.io/flowless-site/images/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title"
+      content="Flowless | Googleドライブのファイル管理・案件別アップロード">
+
+<meta name="twitter:description"
+      content="Googleドライブの案件ファイルを、ひとつの入口からアップロード・共有・検索。">
+
+<meta name="twitter:image"
+      content="https://dq-9.github.io/flowless-site/images/og-image.png">
+      
+
+  <title>Flowless | Googleドライブのファイル管理・案件別アップロード</title>
+  <link rel="canonical" href="https://dq-9.github.io/flowless-site/ja.html">
+  <link rel="alternate" hreflang="en" href="https://dq-9.github.io/flowless-site/">
+  <link rel="alternate" hreflang="ja" href="https://dq-9.github.io/flowless-site/ja.html">
+  <link rel="alternate" hreflang="x-default" href="https://dq-9.github.io/flowless-site/">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="site-logo" href="#top" aria-label="Flowless ホーム">
+        Flowless
+      </a>
+
+
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#how-it-works">使い方</a>
+        <a href="./demo/">デモ</a>
+        <a href="#features">機能</a>
+        <a href="./customization/ja.html">カスタマイズ</a>
+        <a href="./insights/one-place-to-upload/ja.html">読みもの</a>
+        <a href="./help/">ヘルプ</a>
+        <a class="nav-language" href="./" lang="en">English</a>
+        <a class="nav-cta" 
+           href="https://flowlessapp.gumroad.com/l/flowless-v1"
+           target="_blank"
+           rel="noopener noreferrer">
+          Flowlessを購入
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <p class="eyebrow">
+          Googleドライブを使うチームの案件ファイル管理
+        </p>
+
+        <h1>
+          ファイルの保存先を<br>
+          覚えなくていい。
+          <span>Flowlessが保存先をサジェストします。</span>
+        </h1>
+
+        <p class="hero-description">
+          Googleドライブ内に散らばる指定フォルダを毎回探す必要はありません。ひとつの入口からGoogleドライブにアップロードし、そのまま共有・検索できます。
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="https://flowlessapp.gumroad.com/l/flowless-v1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Flowlessを購入 — $39
+          </a>
+          <a class="button button-secondary" href="#demo">
+            動画で見る
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Problem -->
+    <section class="problem-section">
+      <div class="container narrow-container">
+
+        <p class="section-label">
+          単純なはずのファイル共有が、よく止まる。
+        </p>
+
+        <div class="simple-workflow" aria-label="基本的なファイル共有の流れ">
+          <span>ファイルを保存する。</span>
+          <span>必要な人に共有する。</span>
+          <span>あとで見つける。</span>
+        </div>
+
+        <p class="problem-intro">
+          それだけのはずなのに。
+        </p>
+
+        <div class="problem-content">
+
+          <p>実際の現場では：</p>
+
+          <div class="problem-quotes">
+            <blockquote>「ファイルはどこ？」</blockquote>
+            <blockquote>「あとで共有します」</blockquote>
+            <blockquote>「どれが最新版？」</blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Flow -->
+    <section class="workflow-section">
+      <div class="container">
+
+        <h2>
+          ファイルを見失わないための、シンプルなGoogle Workspaceフロー。
+        </h2>
+
+        <div class="workflow">
+
+          <div class="workflow-step">
+            <span class="workflow-number">01</span>
+            <strong>アップロード</strong>
+            <p>
+              案件を選んでファイルを追加。
+            </p>
+          </div>
+
+          <span class="workflow-arrow" aria-hidden="true">→</span>
+
+          <div class="workflow-step">
+            <span class="workflow-number">02</span>
+            <strong>保存</strong>
+            <p>
+              正しいフォルダへ自動保存。
+            </p>
+          </div>
+
+          <span class="workflow-arrow" aria-hidden="true">→</span>
+
+          <div class="workflow-step">
+            <span class="workflow-number">03</span>
+            <strong>共有</strong>
+            <p>
+              必要なメンバーへ通知。
+            </p>
+          </div>
+
+          <span class="workflow-arrow" aria-hidden="true">→</span>
+
+          <div class="workflow-step">
+            <span class="workflow-number">04</span>
+            <strong>完了</strong>
+            <p>
+              あとから簡単に検索。
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- How it works -->
+    <section
+      id="how-it-works"
+      class="how-it-works-section"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Flowlessの使い方</p>
+
+          <h2>
+            アップロードから検索まで、ひとつの流れで。
+          </h2>
+
+          <p>
+            保存先を選ぶところから、あとでファイルを見つけるところまでを、Flowlessでひとつにつなぎます。
+          </p>
+        </div>
+
+        <ol class="steps-list">
+
+          <li class="step-card">
+            <span class="step-number">1</span>
+
+            <div>
+              <h3>案件を選択、または新規作成</h3>
+              <p>
+                Googleドライブのフォルダをたどらず、既存案件を検索するか、新しい案件を作成します。
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">2</span>
+
+            <div>
+              <h3>ファイルをアップロード</h3>
+              <p>
+                選択した案件へ直接ファイルをアップロードします。
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">3</span>
+
+            <div>
+              <h3>新規プロジェクトを管理者が確認</h3>
+              <p>
+                新しいプロジェクトは、管理者の確認と承認後に利用可能になります。
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">4</span>
+
+            <div>
+              <h3>必要な人へ通知</h3>
+              <p>
+                ファイルや案件の準備ができると、登録されたメンバーへ通知します。
+              </p>
+            </div>
+          </li>
+
+          <li class="step-card">
+            <span class="step-number">5</span>
+
+            <div>
+              <h3>あとからファイルを検索</h3>
+              <p>
+                FlowlessのFinderから、案件ごとのファイルを見つけられます。
+              </p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+    <!-- Product demos -->
+    <section id="demo" class="demo-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">デモ動画</p>
+
+          <h2>
+            3つの基本操作を確認できます。
+          </h2>
+
+          <p>
+            アップロード、ファイル検索、新規案件の承認を動画でご覧ください。
+          </p>
+        </div>
+
+
+        <div class="demo-grid">
+
+          <article class="demo-card">
+            <div class="demo-card-copy">
+              <h3>正しい案件へアップロード</h3>
+              <p>保存先フォルダを覚える必要はありません。</p>
+            </div>
+
+            <a
+              class="demo-thumbnail"
+              href="https://drive.google.com/file/d/1txnrwUPBDiOnWt2N9Q99vCDrVVTtsKuS/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Flowlessのアップロードデモを見る"
+            >
+              <img
+                src="images/flowless-upload.png"
+                alt="Flowlessの案件ファイルアップロード画面"
+                loading="lazy"
+              >
+              <span class="play-button" aria-hidden="true"><span>▶</span></span>
+            </a>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card-copy">
+              <h3>あとからファイルを検索</h3>
+              <p>アップロード後も、案件からファイルを見つけられます。</p>
+            </div>
+
+            <a
+              class="demo-thumbnail"
+              href="https://drive.google.com/file/d/1v6X7_Yq7pYsizhLSbQEGNT5fxMroZcWg/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Flowlessのファイル検索デモを見る"
+            >
+              <img
+                src="images/flowless-finder.png"
+                alt="Flowlessの案件ファイル検索画面"
+                loading="lazy"
+              >
+              <span class="play-button" aria-hidden="true"><span>▶</span></span>
+             </a>
+          </article>
+
+          <article class="demo-card demo-card-wide">
+            <div class="demo-card-copy">
+              <h3>新規案件を利用開始前に確認</h3>
+              <p>案件名とフォルダを整理された状態に保ちます。</p>
+            </div>
+
+            <a
+              class="demo-thumbnail"
+              href="https://drive.google.com/file/d/1lMTqS1pdps0mWI4WJTg_aNE23vHVDnlu/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Flowlessの新規案件承認デモを見る"
+            >
+              <img
+                src="images/flowless-admin-approve.png"
+                alt="Flowlessの管理者向け案件承認画面"
+                loading="lazy"
+              >
+              <span class="play-button" aria-hidden="true"><span>▶</span></span>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">主な機能</p>
+
+          <h2>
+            Googleドライブのファイル管理に必要な基本機能。
+          </h2>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+
+            <h3>案件別ファイルアップロード</h3>
+
+            <p>
+              保存先を覚えなくても、案件ファイルを正しいGoogleドライブフォルダへ保存できます。
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+
+            <h3>新規プロジェクトの追加</h3>
+
+            <p>
+              新しいプロジェクトは管理者が確認し、承認後に利用可能なプロジェクト一覧へ追加されます。
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+
+            <h3>メール通知</h3>
+
+            <p>
+              ファイルや案件が準備できたら、必要なメンバーへ通知します。
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">04</span>
+
+            <h3>ファイル検索</h3>
+
+            <p>
+              Googleドライブ内を探し回らず、案件からファイルを検索できます。
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Featured insight -->
+    <section class="insight-section">
+      <div class="container insight-card">
+        <div>
+          <p class="section-label">開発の背景</p>
+          <h2>Googleドライブを整理する前に、アップロードの入口をひとつにしてみる。</h2>
+          <p>
+            フォルダルールだけでは解決しにくいファイル共有の迷子を、案件単位のアップロード窓口で減らす考え方。
+          </p>
+        </div>
+
+        <a class="button button-secondary" href="./insights/one-place-to-upload/ja.html">
+          記事を読む
+        </a>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section id="request-demo" class="cta-section">
+      <div class="container cta-inner">
+
+        <p>
+          「ファイルはどこ？」を終わらせる。
+        </p>
+
+        <h2>
+          Flowlessをチームのファイル共有に。
+        </h2>
+
+      <div class="cta-actions">
+        <a
+          class="button button-light"
+          href="https://flowlessapp.gumroad.com/l/flowless-v1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Flowlessを購入 — $39
+        </a>
+        <a class="button button-outline-light" href="./customization/ja.html">
+          カスタマイズの相談
+        </a>
+      </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div>
+        <a class="footer-logo" href="#top">
+          Flowless
+        </a>
+
+        <p>
+          案件チーム向けのシンプルなGoogleドライブ・ファイル管理。
+        </p>
+      </div>
+
+      <div class="footer-links" aria-label="フッターナビゲーション">
+        <a href="#how-it-works">使い方</a>
+        <a href="./demo/">デモ</a>
+        <a href="#features">機能</a>
+        <a href="./customization/ja.html">カスタマイズ</a>
+        <a href="./insights/one-place-to-upload/ja.html">読みもの</a>
+        <a href="./help/">ヘルプ</a>
+        <a class="nav-cta" 
+           href="https://flowlessapp.gumroad.com/l/flowless-v1"
+           target="_blank"
+           rel="noopener noreferrer">
+          Flowlessを購入
+        </a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="current-year"></span> Flowless.
+        All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('current-year').textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
