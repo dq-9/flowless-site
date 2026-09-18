@@ -298,6 +298,16 @@ section {
   cursor: pointer;
 }
 
+.nav-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .menu-toggle-icon,
 .menu-toggle-icon::before,
 .menu-toggle-icon::after {
@@ -327,16 +337,16 @@ section {
   top: 5px;
 }
 
-.nav-open .menu-toggle-icon {
+.nav-toggle:checked + .menu-toggle .menu-toggle-icon {
   background: transparent;
 }
 
-.nav-open .menu-toggle-icon::before {
+.nav-toggle:checked + .menu-toggle .menu-toggle-icon::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.nav-open .menu-toggle-icon::after {
+.nav-toggle:checked + .menu-toggle .menu-toggle-icon::after {
   top: 0;
   transform: rotate(-45deg);
 }
@@ -1299,12 +1309,12 @@ html[lang="ja"] .custom-hero h1 {
     position: relative;
   }
 
-  .site-header.has-mobile-menu .menu-toggle {
+  .site-header.mobile-nav-ready .menu-toggle {
     display: inline-flex;
     margin-left: auto;
   }
 
-  .site-header.has-mobile-menu .site-nav {
+  .site-header.mobile-nav-ready .site-nav {
     position: absolute;
     top: calc(100% + 1px);
     right: 0;
@@ -1321,33 +1331,33 @@ html[lang="ja"] .custom-hero h1 {
     box-shadow: 0 18px 36px rgba(9, 20, 47, 0.14);
   }
 
-  .site-header.has-mobile-menu.nav-open .site-nav {
+  .site-header.mobile-nav-ready .nav-toggle:checked ~ .site-nav {
     display: flex;
   }
 
-  .site-header.has-mobile-menu .site-nav a {
+  .site-header.mobile-nav-ready .site-nav a {
     display: block;
     padding: 10px 12px;
     border-radius: 10px;
   }
 
-  .site-header.has-mobile-menu .site-nav .nav-cta {
+  .site-header.mobile-nav-ready .site-nav .nav-cta {
     margin-top: 6px;
     text-align: center;
   }
 
-  .site-header:not(.has-mobile-menu) {
+  .site-header:not(.mobile-nav-ready) {
     height: auto;
   }
 
-  .site-header:not(.has-mobile-menu) .header-inner {
+  .site-header:not(.mobile-nav-ready) .header-inner {
     min-height: var(--header-height);
     height: auto;
     flex-wrap: wrap;
     padding-top: 10px;
   }
 
-  .site-header:not(.has-mobile-menu) .site-nav {
+  .site-header:not(.mobile-nav-ready) .site-nav {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1355,7 +1365,7 @@ html[lang="ja"] .custom-hero h1 {
     padding: 8px 0 12px;
   }
 
-  .site-header:not(.has-mobile-menu) .site-nav a {
+  .site-header:not(.mobile-nav-ready) .site-nav a {
     display: inline-flex;
   }
 
