@@ -44,19 +44,23 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
-  <script src="js/site.js" defer></script>
 </head>
 
 <body>
 
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header mobile-nav-ready">
     <div class="container header-inner">
 
       <a class="site-logo" href="#top" aria-label="Flowless ホーム">
         Flowless
       </a>
 
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="menu-toggle" for="nav-toggle">
+        <span class="menu-toggle-icon" aria-hidden="true"></span>
+        <span>メニュー</span>
+      </label>
 
       <nav class="site-nav" aria-label="メインナビゲーション">
         <a href="#how-it-works">使い方</a>
