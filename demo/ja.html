@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-98HXLH1WJT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-98HXLH1WJT');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FlowlessのWebアプリを試したり、サンプルのスプレッドシートを閲覧したりできます。">
+
+  <title>Flowless | ライブデモ</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+
+  <style>
+    .demo-landing {
+      min-height: calc(100vh - var(--header-height));
+      padding: 96px 0 110px;
+      background:
+        radial-gradient(circle at 82% 12%, rgba(36, 72, 255, 0.12), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+    }
+
+    .demo-landing-header {
+      max-width: 760px;
+      margin-bottom: 46px;
+    }
+
+    .demo-landing-header h1 {
+      margin-bottom: 18px;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 850;
+    }
+
+    .demo-landing-header h1 span {
+      color: var(--color-primary);
+    }
+
+    .demo-landing-header > p:last-child {
+      max-width: 680px;
+      margin-bottom: 0;
+      color: var(--color-text-soft);
+      font-size: 1.12rem;
+    }
+
+    .demo-choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .demo-choice-card {
+      display: flex;
+      min-height: 360px;
+      flex-direction: column;
+      padding: 34px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-large);
+      background: var(--color-white);
+      box-shadow: var(--shadow-card);
+    }
+
+    .demo-choice-number {
+      display: inline-block;
+      margin-bottom: 46px;
+      color: var(--color-primary);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.13em;
+    }
+
+    .demo-choice-card h2 {
+      margin-bottom: 14px;
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
+    }
+
+    .demo-choice-card > p {
+      margin-bottom: 18px;
+      color: var(--color-text-soft);
+    }
+
+    .demo-note {
+      margin: 0 0 28px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--color-bg-soft);
+      color: var(--color-text-soft);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .demo-choice-card .button {
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .demo-page-note {
+      max-width: 760px;
+      margin-top: 34px;
+      color: var(--color-text-soft);
+      font-size: 0.92rem;
+    }
+
+    .demo-page-note a {
+    color: var(--color-primary);
+    font-weight: 700;
+    }
+
+    .demo-page-note a:hover {
+    text-decoration: underline;
+    }
+    @media (max-width: 760px) {
+      .demo-landing {
+        padding: 70px 0 80px;
+      }
+
+      .demo-choice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .demo-choice-card {
+        min-height: 0;
+        padding: 28px;
+      }
+
+      .demo-choice-number {
+        margin-bottom: 28px;
+      }
+
+      .demo-choice-card .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="../ja.html" aria-label="Flowless 日本語トップ">Flowless </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="menu-toggle" for="nav-toggle">
+        <span class="menu-toggle-icon" aria-hidden="true"></span>
+        <span>メニュー</span>
+      </label>
+
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="../ja.html#how-it-works">使い方</a>
+        <a href="./ja.html" aria-current="page">ライブデモ</a>
+        <a href="../ja.html#features">機能</a>
+        <a href="../help/">ヘルプ</a>
+        <a class="nav-language" href="./" lang="en">English</a>
+        <a
+          class="nav-cta"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSenA9XQhorL8AsXYXGXHHgdKC8vaj6UW8YOBI3whgvIZ4mY9Q/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          デモを依頼
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="demo-landing">
+    <div class="container">
+
+      <div class="demo-landing-header">
+        <p class="section-label">ライブデモ</p>
+        <h1><span>Flowless</span> を試してみる</h1>
+        <p>
+          Webアプリとサンプルのスプレッドシートで、案件ごとのファイル管理を体験できます。
+        </p>
+      </div>
+
+      <div class="demo-choice-grid">
+
+        <article class="demo-choice-card">
+          <span class="demo-choice-number">01</span>
+          <h2>Webアプリを試す</h2>
+          <p>
+            案件の検索、ファイルのアップロード操作、Finderでのファイル一覧を試せます。
+          </p>
+
+          <p class="demo-note">
+            公開デモでは、サンプル用のファイルでお試しください。
+          </p>
+
+          <!-- Replace WEB_APP_DEMO_URL with the deployed demo Web App URL -->
+          <a
+            class="button button-primary"
+            href="https://script.google.com/macros/s/AKfycbzvGsEg9CQoTB7q6wC3AL7C8X3yYVJJulCX-RA5PIHXbDTivlOKrPFyv4mvnbOoyaZGRA/exec"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Webアプリのデモを開く
+          </a>
+        </article>
+
+        <article class="demo-choice-card">
+          <span class="demo-choice-number">02</span>
+          <h2>デモ用スプレッドシートを見る</h2>
+          <p>
+            案件、ユーザー、操作ログのサンプルを確認できます。
+          </p>
+
+          <p class="demo-note">
+            閲覧専用です。表示されるデータはすべてサンプルです。
+          </p>
+
+          <!-- Replace DEMO_SPREADSHEET_URL with the public view-only spreadsheet URL -->
+          <a
+            class="button button-primary"
+            href="https://docs.google.com/spreadsheets/d/1WrtW0SwNnGm1k9-ctLx1hO2w8kSlbKti6rGacRD0w4s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            スプレッドシートを開く
+          </a>
+        </article>
+
+      </div>
+
+      <p class="demo-page-note">
+        設定や管理の手順は、<a href="../help/">ヘルプ</a>のユーザーガイドと管理者ガイドをご覧ください。
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div>
+        <a class="footer-logo" href="../ja.html">Flowless </a>
+        <p>案件チーム向けのシンプルなGoogleドライブ・ファイル管理。</p>
+      </div>
+
+      <div class="footer-links" aria-label="フッターナビゲーション">
+        <a href="../ja.html#how-it-works">使い方</a>
+        <a href="./ja.html">ライブデモ</a>
+        <a href="../ja.html#features">機能</a>
+        <a href="../help/">ヘルプ</a>
+        <a
+          class="nav-cta"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSenA9XQhorL8AsXYXGXHHgdKC8vaj6UW8YOBI3whgvIZ4mY9Q/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          デモを依頼
+        </a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="current-year"></span> Flowless. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
